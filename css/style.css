@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html::-webkit-scrollbar{
+    width: 1opx;
+    border-radius: 50px;
+}
+
+
+/* container styling */
+.container{
+    padding: 100px 9%;
+    background: linear-gradient(45deg,deeppink,blue);
+    display: flex;
+}
+
+/* container profile styling */
+.container .profile{
+    width: 100%;
+    flex: 1 1 400px;
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    position: sticky;
+    top: 20px;
+    left: 0px;
+    border-right: 2px solid black;
+    align-self: flex-start;
+}
+
+
+/* profile image styling */
+.container .profile img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.container .profile h3{
+    font-family: 'Ubuntu',sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.container .profile p{
+    font-family: 'Ubuntu',sans-serif;
+    text-transform: capitalize;
+    color: rgb(46, 138, 224);
+   font-size: 15px;
+   padding: 5px 0;
+   margin-bottom: 10px;
+}
+
+
+/* social media account styling */
+.container .profile .social{
+    margin: 10px 0;
+}
+
+.container .profile .social a{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: black;
+    background: rgb(224, 213, 213);
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container .profile .social a:hover{
+    background: rgb(35, 103, 230);
+    color: white;
+}
+
+
+/* buttonm styling */
+
+.container .profile .button .btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background: blue;
+    color: white;
+    text-transform: capitalize;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container .profile .button .btn:hover{
+    background: black;
+}
+
+
+.container .info{
+    flex:1 1 1000px;
+    background: white;
+}
+
+
+
+/* right portion styling */
+.container .right{
+    flex: 1 1 900px;
+    background: white;
+    padding: 30px 20px;
+    
+}
+
+
+.container .right .about
+{
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.container .right .about:last-child
+{
+    margin-bottom: 0;
+}
+
+.container .right .about .title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.container .right .about p{
+    color:#333;
+}
+
+.container .right .about .box-cont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.container .right .about .box{
+   flex: 1 1 200px;
+   text-transform: capitalize;
+}
+
+.container .right .about .box h3{
+    font-size: 15px;
+    padding: 10px 0;
+    color: black;
+}
+
+.container .right .about .box h3 span{
+    color: #333;
+}
+
+.container .right .abt .title2{
+    color: #003147;
+}
+
+.container .right .abt .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.container .right .box .port{
+    min-width: 150px;
+}
+
+.container .right .abt .port h5{
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container .right .abt .box .text h4{
+ text-transform: uppercase;
+ color: #03a9f4;
+ font-size: 16px;
+}
+
+.container .right .abt .box .text p{
+    text-transform: capitalize;
+    margin-top: 2px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container .right .about.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container .right .about.skills .box h4{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.container .right .about.skills .box .percent{
+  position:relative;
+    height: 10px;
+    width: 100%;
+    background: #848c99;
+}
+
+.container .right .about.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.container .right .about.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container .right .about.interest ul li{
+    list-style: none;
+    color: #333;
+    font: 500;
+   margin: 10px 0;
+}
+.container .right .about.interest ul li .fa,
+.container .right .about.interest ul li .fas,
+.container .right .about.interest ul li .fab{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+
